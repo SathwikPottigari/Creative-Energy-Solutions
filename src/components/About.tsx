@@ -73,18 +73,18 @@ const About = () => {
             </div>
 
             {/* Highlights Grid */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-3 md:gap-4">
               {highlights.map((item, index) => (
                 <div
                   key={index}
-                  className="glass-card p-4 flex items-center gap-4 hover-lift"
+                  className="glass-card p-3 md:p-4 flex items-start gap-3 md:gap-4 hover-lift min-h-[100px]"
                 >
-                  <div className="p-3 rounded-xl bg-primary/10">
-                    <item.icon className="w-5 h-5 text-primary" />
+                  <div className="p-2 md:p-3 rounded-xl bg-primary/10 flex-shrink-0">
+                    <item.icon className="w-4 h-4 md:w-5 md:h-5 text-primary" />
                   </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground">{item.label}</p>
-                    <p className="font-semibold text-foreground">{item.value}</p>
+                  <div className="min-w-0 flex-1">
+                    <p className="text-xs md:text-sm text-muted-foreground">{item.label}</p>
+                    <p className="font-semibold text-foreground text-sm md:text-base break-words leading-tight">{item.value}</p>
                   </div>
                 </div>
               ))}
