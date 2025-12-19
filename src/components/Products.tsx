@@ -157,12 +157,12 @@ const Products = () => {
             {additionalProducts.map((product, index) => (
               <div
                 key={index}
-                className="glass-card p-6 text-center hover-lift group cursor-pointer"
+                className="glass-card p-4 md:p-6 text-center hover-lift group cursor-pointer"
               >
-                <div className="inline-flex p-4 rounded-2xl bg-primary/10 mb-4 group-hover:bg-primary/20 transition-colors">
-                  <product.icon className="w-6 h-6 text-primary" />
+                <div className="inline-flex p-3 md:p-4 rounded-2xl bg-primary/10 mb-3 md:mb-4 group-hover:bg-primary/20 transition-colors">
+                  <product.icon className="w-5 h-5 md:w-6 md:h-6 text-primary" />
                 </div>
-                <p className="font-medium text-foreground">{product.name}</p>
+                <p className="font-medium text-foreground text-sm md:text-base break-words">{product.name}</p>
               </div>
             ))}
           </div>
