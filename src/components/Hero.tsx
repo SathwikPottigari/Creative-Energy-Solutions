@@ -63,7 +63,7 @@ const Hero = () => {
               href="#about"
               className="inline-flex items-center justify-center gap-2 bg-secondary/80 text-secondary-foreground px-8 py-4 rounded-full font-semibold text-lg border border-border hover:bg-secondary transition-all duration-300"
             >
-              Learn More
+              Discover Our Story
             </a>
           </div>
 
